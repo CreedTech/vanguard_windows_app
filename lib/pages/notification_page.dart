@@ -32,7 +32,7 @@ class _NotificationPageState extends State<NotificationPage> {
         child: Scaffold(
       appBar: AppBar(
         backgroundColor: kSecondaryColor,
-        title: Text(AppLocalizations.of(context).notfication),
+        title: Text(AppLocalizations.of(context)!.notfication),
         actions: const [
           IconButton(
             icon: Icon(Icons.cancel_presentation_rounded),
@@ -60,13 +60,13 @@ class _NotificationPageState extends State<NotificationPage> {
                   ),
                   const SizedBox(height: 10),
                   Text(
-                    AppLocalizations.of(context).notificationSectionTitle,
+                    AppLocalizations.of(context)!.notificationSectionTitle,
                     style: const TextStyle(
                         fontSize: 20, fontWeight: FontWeight.w700),
                   ),
                   const SizedBox(height: 5),
                   Text(
-                    AppLocalizations.of(context).notificationSectionMsg,
+                    AppLocalizations.of(context)!.notificationSectionMsg,
                     textAlign: TextAlign.center,
                     style: const TextStyle(fontWeight: FontWeight.w500),
                   ),

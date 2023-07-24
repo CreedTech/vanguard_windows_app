@@ -24,11 +24,11 @@ class SettingsPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  AppLocalizations.of(context).generalSettings,
+                  AppLocalizations.of(context)!.generalSettings,
                 ),
               ),
               SwitchListTile(
-                title: Text(AppLocalizations.of(context).notfication),
+                title: Text(AppLocalizations.of(context)!.notfication),
                 value: true,
                     // Provider.of<NotificationProvider>(context).checkNotfication,
                 secondary: const IconWidget(
@@ -43,7 +43,7 @@ class SettingsPage extends StatelessWidget {
               const SizedBox(height: 10),
               SwitchListTile(
                 title: Text(
-                  AppLocalizations.of(context).darkMode,
+                  AppLocalizations.of(context)!.darkMode,
                 ),
                 value: false,
                 // isDarkTheme,
@@ -209,7 +209,7 @@ class SettingsPage extends StatelessWidget {
               // ),
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: Text(AppLocalizations.of(context).about),
+                child: Text(AppLocalizations.of(context)!.about),
               ),
               // ListTile(
               //   title: Text(AppLocalizations.of(context)!.termsAndConditions),
@@ -224,7 +224,7 @@ class SettingsPage extends StatelessWidget {
               // ),
               const SizedBox(height: 10),
               ListTile(
-                title: Text(AppLocalizations.of(context).about),
+                title: Text(AppLocalizations.of(context)!.about),
                 leading: const IconWidget(
                   icon: CustomIcon.note,
                   color: kSecondaryColor,
@@ -236,7 +236,7 @@ class SettingsPage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               ListTile(
-                title: Text(AppLocalizations.of(context).privacyPolicy),
+                title: Text(AppLocalizations.of(context)!.privacyPolicy),
                 leading: const IconWidget(
                   icon: Icons.lock_outline,
                   color: kSecondaryColor,
@@ -248,7 +248,7 @@ class SettingsPage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               ListTile(
-                title: Text(AppLocalizations.of(context).rateThisApp),
+                title: Text(AppLocalizations.of(context)!.rateThisApp),
                 leading: const IconWidget(
                   icon: Icons.star_outline,
                   color: kSecondaryColor,
@@ -258,11 +258,11 @@ class SettingsPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  AppLocalizations.of(context).social,
+                  AppLocalizations.of(context)!.social,
                 ),
               ),
               ListTile(
-                title: Text(AppLocalizations.of(context).contactUs),
+                title: Text(AppLocalizations.of(context)!.contactUs),
                 leading: const IconWidget(
                   icon: Icons.contact_mail,
                   color: kSecondaryColor,
@@ -274,7 +274,7 @@ class SettingsPage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               ListTile(
-                title: Text(AppLocalizations.of(context).website),
+                title: Text(AppLocalizations.of(context)!.website),
                 leading: const IconWidget(
                   icon: CustomIcon.world,
                   color: kSecondaryColor,

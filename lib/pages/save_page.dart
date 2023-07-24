@@ -35,13 +35,13 @@ class _SavePageState extends State<SavePage> {
                   ),
                   const SizedBox(height: 10),
                   Text(
-                    AppLocalizations.of(context).savedSectionTitle,
+                    AppLocalizations.of(context)!.savedSectionTitle,
                     style: const TextStyle(
                         fontSize: 20, fontWeight: FontWeight.w700),
                   ),
                   const SizedBox(height: 5),
                   Text(
-                    AppLocalizations.of(context).savedSectionMsg,
+                    AppLocalizations.of(context)!.savedSectionMsg,
                     textAlign: TextAlign.center,
                     style: const TextStyle(fontWeight: FontWeight.w500),
                   ),

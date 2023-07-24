@@ -259,7 +259,7 @@ class _MainHomeState extends State<MainHome> {
                     if (mounted) {
                       setState(() {
                         navBarIndex = 1;
-                        appBarTitle = AppLocalizations.of(context)
+                        appBarTitle = AppLocalizations.of(context)!
                             .categories
                             .toUpperCase();
                       });
@@ -271,7 +271,7 @@ class _MainHomeState extends State<MainHome> {
                     if (mounted) {
                       setState(() {
                         navBarIndex = 2;
-                        appBarTitle = AppLocalizations.of(context)
+                        appBarTitle = AppLocalizations.of(context)!
                             .saved
                             .toUpperCase();
                       });
@@ -283,7 +283,7 @@ class _MainHomeState extends State<MainHome> {
                     if (mounted) {
                       setState(() {
                         navBarIndex = 3;
-                        appBarTitle = AppLocalizations.of(context)
+                        appBarTitle = AppLocalizations.of(context)!
                             .settings
                             .toUpperCase();
                       });

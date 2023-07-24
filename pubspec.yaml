@@ -60,6 +60,7 @@ dependencies:
   url_launcher:
   html:
   flutter_spinkit: ^5.2.0
+  rename_app: ^1.1.0
 
 dev_dependencies:
 
@@ -74,11 +75,15 @@ dev_dependencies:
   google_mobile_ads:
 
 flutter_icons:
-  image_path_android: "assets/images/app_logo.png"
-  image_path_ios: "assets/images/app_logo.png"
-  remove_alpha_ios: true
-  android: true
+  android: "launcher_icon"
   ios: true
+  image_path: "assets/images/app_logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  windows:
+    generate: true
+    image_path: "assets/images/app_logo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+
 
 flutter:
   generate: true
