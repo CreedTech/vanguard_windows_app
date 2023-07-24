@@ -8,11 +8,11 @@ import 'package:animations/animations.dart'
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:onesignal_flutter/onesignal_flutter.dart';
+// import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:vanguard/utilities/config.dart';
+// import 'package:vanguard/utilities/config.dart';
 
-import 'hiveDB/db_function.dart';
+// import 'hiveDB/db_function.dart';
 import 'l10n/l10n.dart';
 import 'providers/connectivity_provider.dart';
 import 'providers/locale_provider.dart';
@@ -113,37 +113,37 @@ class _MainHomeState extends State<MainHome> {
   ];
 
   // OneSignal Push Notification init Function
-  Future<void> initPlatformState() async {
-    OneSignal.shared.setLogLevel(OSLogLevel.verbose, OSLogLevel.none);
-    OneSignal.shared.setAppId(Config.oneSignalAppId);
+  // Future<void> initPlatformState() async {
+  //   OneSignal.shared.setLogLevel(OSLogLevel.verbose, OSLogLevel.none);
+  //   OneSignal.shared.setAppId(Config.oneSignalAppId);
 
-    OneSignal.shared
-        .setNotificationOpenedHandler((OSNotificationOpenedResult result) {
-      saveNotification(
-        notificationId: result.notification.notificationId,
-        title: result.notification.title ?? "",
-        body: result.notification.body,
-      );
-      globals.appNavigator.currentState!
-          .push(MaterialPageRoute(builder: (context) {
-        return const NotificationPage();
-      }));
-    });
+  //   OneSignal.shared
+  //       .setNotificationOpenedHandler((OSNotificationOpenedResult result) {
+  //     saveNotification(
+  //       notificationId: result.notification.notificationId,
+  //       title: result.notification.title ?? "",
+  //       body: result.notification.body,
+  //     );
+  //     globals.appNavigator.currentState!
+  //         .push(MaterialPageRoute(builder: (context) {
+  //       return const NotificationPage();
+  //     }));
+  //   });
 
-    OneSignal.shared.setNotificationWillShowInForegroundHandler(
-        (OSNotificationReceivedEvent event) {
-      /// Display Notification, send null to not display
-      if (Provider.of<NotificationProvider>(context).checkNotfication) {
-        event.complete(event.notification);
-      } else {
-        event.complete(null);
-      }
-    });
-  }
+  //   OneSignal.shared.setNotificationWillShowInForegroundHandler(
+  //       (OSNotificationReceivedEvent event) {
+  //     /// Display Notification, send null to not display
+  //     if (Provider.of<NotificationProvider>(context).checkNotfication) {
+  //       event.complete(event.notification);
+  //     } else {
+  //       event.complete(null);
+  //     }
+  //   });
+  // }
 
   @override
   void initState() {
-    initPlatformState();
+    // initPlatformState();
     Provider.of<ConnectivityProvider>(context, listen: false).startMonitoring();
     // Provider.of<WeatherData>(context, listen: false).setWeatherData();
     getHomeCategory();

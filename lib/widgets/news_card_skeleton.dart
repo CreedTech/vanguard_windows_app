@@ -134,9 +134,9 @@ class _NewsCardSkeletonState extends State<NewsCardSkeleton> {
                           fit: BoxFit.cover,
                           placeholder: (context, url) {
                             return const SpinKitCircle(
-                        color: kSecondaryColor,
-                        size: 50.0,
-                      );
+                              color: kSecondaryColor,
+                              size: 50.0,
+                            );
                           },
                           errorWidget: (context, url, error) => Container(
                             width: MediaQuery.of(context).size.width / 2.5,
