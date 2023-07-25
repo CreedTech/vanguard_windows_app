@@ -102,8 +102,6 @@ class _NewsCardState extends State<NewsCard> {
 
       return true;
     } else {
-      print("error");
-      print(response);
       return false;
     }
   }
@@ -184,9 +182,9 @@ class _NewsCardState extends State<NewsCard> {
         },
       ),
       child: isRefresh
-          ? const Stack(
+          ?  Stack(
               fit: StackFit.expand,
-              children: [
+              children: const [
                 Center(
                   child: SizedBox(
                     width: 200,
@@ -242,12 +240,12 @@ class _NewsCardState extends State<NewsCard> {
                     );
                   },
                 )
-              : Container(
+              : const SizedBox(
                   width: double.infinity,
                   // decoration: const BoxDecoration(
                   //   color: kSecondaryColor,
                   // ),
-                  child: const Center(child: Text("No Posts")),
+                  child: Center(child: Text("No Posts")),
                 )),
     );
   }

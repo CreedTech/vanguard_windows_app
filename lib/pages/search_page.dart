@@ -100,9 +100,9 @@ class _SearchPageState extends State<SearchPage> {
                   valueListenable: searchPosts,
                   builder: (context, posts, _) {
                     return isLoading
-                        ? const Stack(
+                        ? Stack(
                             fit: StackFit.expand,
-                            children: [
+                            children: const [
                               Center(
                                 child: SizedBox(
                                   width: 200,

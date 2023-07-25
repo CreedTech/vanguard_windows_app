@@ -143,9 +143,9 @@ class _SectionCardState extends State<SectionCard> {
         },
       ),
       child: isRefresh
-          ? const Stack(
+          ?  Stack(
               fit: StackFit.expand,
-              children: [
+              children: const [
                 Center(
                   child: SizedBox(
                     width: 200,
