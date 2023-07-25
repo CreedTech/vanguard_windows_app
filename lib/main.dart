@@ -12,7 +12,7 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 // import 'package:vanguard/utilities/config.dart';
 
-// import 'hiveDB/db_function.dart';
+// import 'hiveDB/db_function.dart';\
 import 'l10n/l10n.dart';
 import 'providers/connectivity_provider.dart';
 import 'providers/locale_provider.dart';
